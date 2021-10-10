@@ -1,0 +1,85 @@
+﻿<local:MyCard Title="快速启动" Margin="0,0,0,17">
+    <StackPanel Margin="25,40,23,20">
+        <TextBlock Margin="15,0,0,4" Text="欢迎使用" FontSize="19"/>
+        <TextBlock Foreground="#764CEB" HorizontalAlignment="Center" FontSize="35" Margin="0,0,0,15" Text="PCL XIII Pro Max Plus"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Width="150" Height="80" ColorType="Highlight" Margin="0,0,10,0" Text="启动 ElfMC 客户端" EventType="启动游戏" EventData="ElfMC 1.16.5" ToolTip="搞快点，快点玩！"/>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <local:MyButton Margin="0,0,10,0" Width="150" Height="35" HorizontalAlignment="Left" Text="启动1.17.1" EventType="启动游戏" EventData="1.17.1" ToolTip="游玩1.17.1"/>
+                    <local:MyButton Margin="0,0,10,0" Width="150" Height="35" HorizontalAlignment="Left" Text="打开 ElfMC 官网" EventType="打开网页" EventData="https://elfmc.com" ToolTip="访问 ElfMC 的官网"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <local:MyButton Margin="0,0,10,0" Width="150" Height="35" HorizontalAlignment="Left" Text="加入 ElfMC 交流群" EventType="打开网页" EventData="https://qm.qq.com/cgi-bin/qm/qr?k=yfI4WIFoO8N3DPOdWIbwrb_Cwix8brDt" ToolTip="人多水量大"/>
+                    <local:MyButton Margin="0,0,10,0" Width="150" Height="35" HorizontalAlignment="Left" Text="前往茶馆" EventType="打开网页" EventData="https://www.mcbbs.net/forum-chat-1.html" ToolTip="末路之地警告"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+    
+<StackPanel>
+    <Grid>
+        <Grid.ColumnDefinitions>
+             <ColumnDefinition Width="Auto"/>
+             <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <local:MyCard Title="快速引导" Margin="0,0,17,17" Grid.Column="0">
+            <StackPanel Margin="25,40,23,15">
+                <Grid>
+                    <UniformGrid Columns="2">
+                        <local:MyListItem Logo="https://www.bilibili.com/favicon.ico" Title="MC Wiki" Info="不懂就问百科娘" EventType="打开网页" EventData="https://wiki.biligame.com/mc/Minecraft_Wiki" Type="Clickable" ToolTip="Fandom的太慢了啦！"/>
+                        <local:MyListItem Logo="https://patchwiki.biligame.com/images/mc/thumb/5/53/smk9nesqj6bkd5qyd718xxhocic6et0.png/150px-Grass_Block_JE7_BE6.png" Title="Minecraft" Info="官方网站" EventType="打开网页" EventData="https://minecraft.net/" Type="Clickable" ToolTip="Bugjang AB"/>
+                        <local:MyListItem Logo="https://www.mcmod.cn/images/favicon.ico" Title="MCMOD百科" Info="最大的Minecraft中文MOD百科" EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable" ToolTip="呐，其实你用PCL2的下载更快哦"/>
+                        <local:MyListItem Logo="https://afdian.net/static/img/logo/logo.png" Title="龙腾猫跃" Info="正在创作 Minecraft 启动器 PCL2" EventType="打开网页" EventData="https://afdian.net/@LTCat" Type="Clickable" ToolTip="我，lm，打钱"/>
+                        <local:MyListItem Logo="https://pic.imgdb.cn/item/6162a02a2ab3f51d9199d3f0.png" Title="更多" Info="其实没有更多了" EventType="弹出窗口" EventData="PR, PLZ(|前往github提交您的建议吧" Type="Clickable" ToolTip="别看了，我害羞" Width="225" />
+                    </UniformGrid>
+                </Grid>
+            </StackPanel>
+        </local:MyCard>
+        <local:MyCard Title="百宝箱" Margin="0,0,0,17" VerticalAlignment="Top" Grid.Column="1">
+            <StackPanel Margin="10,40,10,10" HorizontalAlignment="Center">
+                <local:MyButton Margin="0,0,0,10" Width="139" Height="35" HorizontalAlignment="Left" Text="今日人品" EventType="弹出窗口" EventData="今日人品 - 1919/08/10|你们的人品值都是0！0！0！！！" ToolTip="都是0！！！"/>
+                <local:MyButton Margin="0,0,0,10" Width="139" Height="35" HorizontalAlignment="Left" Text="千万别点" EventType="弹出窗口" EventData="坏！|叫你别点了，真不听话……" ToolTip="说不听吗" ColorType="Red"/>
+                <local:MyButton Margin="0,0,0,10" Width="139" Height="35" HorizontalAlignment="Left" Text="刷新主页" EventType="刷新主页" ToolTip="Refresh!" ColorType="Highlight"/>
+            </StackPanel>
+        </local:MyCard>
+    </Grid>
+</StackPanel>
+
+<local:MyCard Title="Baka广场" CanSwap="True" IsSwaped="True" Margin="0,0,0,17">
+    <WrapPanel Margin="25,40,23,15">
+        <StackPanel>
+        </StackPanel>
+    </WrapPanel>
+</local:MyCard>
+
+<local:MyCard Title="ElfMC 简介" CanSwap="True" IsSwaped="True" Margin="0,0,0,17">
+    <StackPanel Margin="25,40,23,5">
+        <TextBlock Margin="1,6,0,0" Foreground="#888494" TextWrapping="Wrap" FontSize="17" Text="ElfMC 服务器尚未完工，详细信息可访问官网或加群了解"/>
+        <local:MyHint Margin="0,8,0,0" IsWarn="False" Text="「我们」致力于打造精致的服务器"/>
+    </StackPanel>
+    <StackPanel Margin="15,50,15,5">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Margin="0,30,5,-15" Source="https://elfmc.com/files/logo.png" Grid.Column="0"/>
+            <StackPanel Margin="20,66,0,15" Grid.Column="1">
+                <TextBlock Margin="0,6,0,0" TextWrapping="Wrap" FontSize="21" Text="✪ 玩法：半生存半RPG, MMO.&#xA;✪ 地图特性：魔法与物理。&#xA;✪ 创新：拥有原版以外的物品和家具(Beta)。主地图采用独特算法。&#xA;✪ 模板:我们要让原版玩出MOD的花样。"/>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="关于" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyListItem Margin="-5,0,-5,0" Logo="https://elfmc.com/files/logo.png" Title="ElfMC Card" Info="当前版本：Beta 0.1.3，最后更新日期：21/10/09"/>
+        <local:MyListItem Margin="-5,0,-5,0" Logo="https://i1.hdslb.com/bfs/face/eab517fa7e7d7b4996e1ebf13b2786f3a732d933.jpg@128w_128h_1o.webp" Title="Cha_Shao" Info="主页作者"/>
+        <local:MyListItem Margin="-5,0,-5,0" Logo="https://pic.imgdb.cn/item/6162a02a2ab3f51d9199d3e4.png" Title="提交反馈/建议" Info="To Github" EventType="打开网页" EventData="https://github.com/Cha-Shao/PCL-homepage" Type="Clickable"/>
+    </StackPanel>
+</local:MyCard>
