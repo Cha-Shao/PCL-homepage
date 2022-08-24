@@ -3,10 +3,10 @@
         <TextBlock Margin="15,0,0,4" Text="欢迎使用" FontSize="19"/>
         <TextBlock Foreground="#764CEB" HorizontalAlignment="Center" FontSize="35" Margin="0,0,0,15" Text="PCL XIII Pro Max Plus"/>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <local:MyButton Width="150" Height="80" ColorType="Highlight" Margin="0,0,10,0" Text="启动 ElfMC 客户端" EventType="启动游戏" EventData="ElfMC 1.16.5" ToolTip="搞快点，快点玩！"/>
+            <local:MyButton Width="150" Height="80" ColorType="Highlight" Margin="0,0,10,0" Text="启动 ElfMC 客户端" EventType="启动游戏" EventData="ElfMC 1.18.2 Dev Cilent" ToolTip="搞快点，快点玩！"/>
             <StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <local:MyButton Margin="0,0,10,0" Width="150" Height="35" HorizontalAlignment="Left" Text="启动1.17.1" EventType="启动游戏" EventData="1.17.1" ToolTip="游玩1.17.1"/>
+                    <local:MyButton Margin="0,0,10,0" Width="150" Height="35" HorizontalAlignment="Left" Text="启动1.19" EventType="启动游戏" EventData="1.19-Fabric 0.14.7" ToolTip="建议游玩:Miaoscraft"/>
                     <local:MyButton Margin="0,0,10,0" Width="150" Height="35" HorizontalAlignment="Left" Text="打开 ElfMC 官网" EventType="打开网页" EventData="https://elfmc.com" ToolTip="访问 ElfMC 的官网"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
@@ -47,7 +47,7 @@
     </Grid>
 </StackPanel>
 
-<local:MyCard Title="鸽子广场" CanSwap="True" IsSwaped="True" Margin="0,0,0,17">
+<local:MyCard Title="Elf广场" CanSwap="True" IsSwaped="True" Margin="0,0,0,17">
     <StackPanel Margin="25,40,23,0">
         <local:MyHint Margin="0,0,0,15" IsWarn="False" Text="此处仅预览月内最新文章"/>
         <!-- 文章1 -->
@@ -63,7 +63,7 @@
                     </Border.Background>
                 </Border>
                 <StackPanel Margin="15,15,15,15" Grid.Column="1">
-                    <TextBlock Text="Title" FontSize="20"/>
+                    <TextBlock Text="实时更新测试" FontSize="20"/>
                     <TextBlock FontSize="15" Margin="10,5,0,0" TextWrapping="Wrap" Text="这里是正文~                                                                                                 "/>
                 </StackPanel>
             </Grid>
@@ -116,7 +116,7 @@
 
 <local:MyCard Title="关于" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
-        <local:MyListItem Margin="-5,0,-5,0" Logo="https://elfmc.com/files/logo.png" Title="ElfMC Card" Info="当前版本：Alpha 0.1.7，最后更新日期：21/10/10"/>
+        <local:MyListItem Margin="-5,0,-5,0" Logo="https://elfmc.com/files/logo.png" Title="ElfMC Card" Info="当前版本：Alpha 0.2.0，最后更新日期：21/10/10"/>
         <local:MyListItem Margin="-5,0,-5,0" Logo="https://i1.hdslb.com/bfs/face/eab517fa7e7d7b4996e1ebf13b2786f3a732d933.jpg@128w_128h_1o.webp" Title="Cha_Shao" Info="主页作者"/>
         <local:MyListItem Margin="-5,0,-5,0" Logo="https://pic.imgdb.cn/item/6162a02a2ab3f51d9199d3e4.png" Title="提交反馈/建议" Info="To Github" EventType="打开网页" EventData="https://github.com/Cha-Shao/PCL-homepage" Type="Clickable"/>
     </StackPanel>
